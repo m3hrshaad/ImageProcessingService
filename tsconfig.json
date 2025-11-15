@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "outDir": "./build",                // پوشه خروجی فایل‌های js
+    "rootDir": "./",                    // پوشه ریشه سورس‌های ts
+    "esModuleInterop": true,            // برای سازگاری با import های commonjs
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                     // فعال‌کردن چک‌های سخت‌گیرانه تایپ
+    "skipLibCheck": true,               // صرف نظر از بررسی type definitions در node_modules
+    "resolveJsonModule": true,          // اجازه ایمپورت json
+    "sourceMap": true                   // برای نقشه‌برداری سورس و دیباگ بهتر (اختیاری)
+  },
+  "include": ["./**/*.ts"],             // پوشه/فایل‌هایی که کامپایل بشن
+  "exclude": ["node_modules", "build"] // فایل‌هایی که نباید کامپایل بشن
+}
